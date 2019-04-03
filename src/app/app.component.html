@@ -1,5 +1,4 @@
 <div class="container">
-<<<<<<< HEAD
     <div class="slider">
         <div id="demo" class="carousel slide" data-ride="carousel" #sliderBox (mouseover)="showArraow()" (mouseout)="hideArraow()">
             <ul class="carousel-indicators">
@@ -24,23 +23,4 @@
         </div>
     </div>
 
-=======
-    <form [formGroup]="searchForm" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 box" novalidate>
-        <h4>Wikipedia Search</h4>
-        <div class="row">
-            <div class="col-md-12 form-group">
-                <label>Search Text</label>
-                <input type="text" formControlName="search" name="search" class="form-control" />
-            </div>
-            <div class="col-md-12 form-group">
-                <button class="btn btn-success" (click)="searchTxt()">Search</button>
-            </div>
-        </div>
-    </form>
-    <div class="loading" *ngIf="isLoading">Loading</div>
-    <div class="col-md-12" *ngIf="!isLoading">
-        <h3>{{title}}</h3>
-        <div [innerHTML]="results"></div>
-    </div>
->>>>>>> e47659dc8b94c188d8cc40ae9dad3b213aa004e6
 </div>
