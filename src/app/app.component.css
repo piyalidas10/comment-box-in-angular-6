@@ -1,0 +1,58 @@
+.slider{
+  padding: 5px;
+  background: #FFF;
+  margin-top: 20px;
+}
+.carousel-item img{
+  width: 100%;
+}
+.carousel-control-next, .carousel-control-prev {
+  height: 100px;
+  margin: 0;
+  width: 46px;
+  background: #fff;
+  color: #333;
+  top: 50%;
+  position: absolute;
+  z-index: 8;
+  margin-top: -50px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  text-indent: 0;
+  font-size: 0;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -ms-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.carousel-control-prev{
+  border-radius: 0 5px 5px 0;
+  left: -70px;
+}
+
+
+.carousel-control-next{
+  border-radius: 5px 0 0 5px;
+  right: -70px;
+}
+
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 20px;
+line-height: 20px;
+color: #000000;
+font-weight: bold;
+}
+
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 20px;
+line-height: 20px;
+color: #000000;
+font-weight: bold;
+}
+
