@@ -1,0 +1,13 @@
+<form [formGroup]="childForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <textarea class="form-control" placeholder="Leave a comment" formControlName="comment" [ngClass]="{ 'is-invalid': submitted && childForm.controls['comment'].errors }"></textarea>
+        <div class="invalid-feedback" *ngIf="submitted && childForm.controls['comment'].errors">
+            <div *ngIf="childForm.controls['comment'].errors.required">Comment is required</div>
+            <div *ngIf="childForm.controls['comment'].errors.minlength">Comment must be at least 6 characters</div>
+            <div *ngIf="childForm.controls['comment'].errors.maxlength">Comment must be at most 100 characters</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Post Comment</button>
+    </div>
+</form>

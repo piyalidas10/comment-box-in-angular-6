@@ -1,4 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background: #CCC;
+    background: #e1e1e1;
+  }
+  .card{
+    padding: 25px 25px;
+    margin-top: 20px;
+  }
+  .header{
+    border-bottom: #EEE 1px solid;
+    margin-bottom: 20px;
+  }
+  .comment-container .left{
+    width:50px;
+    height: 50px;
+    position: relative;
+  }
+  .comment-container .right{
+    margin-left: 60px;
+  }
+  .comment-container p{
+    background: #e9ebee;
+    padding: 6px 10px;
+  }
+  textarea.form-control{
+    resize: none;
+  }
+  .comments ul{
+    list-style: none;
+    padding: 0;
+  }
+  .comments ul li{
+    border-bottom: #EEE 1px solid;
+    margin-bottom: 10px;
+  }
+  .comments ul li:last-child{
+    border-bottom: none;
+  }
+  .comments h6{
+    margin-left: 15px;
+  }
+  .divider{
+    margin: 0 5px;
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .actions{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .actions .btn{
+    font-size: 12px;
+  }
+  .collapsible{
+    display: inline-block;
+  }
+  .childCommentBox{
+    margin-left: 15px;
   }

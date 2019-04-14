@@ -1,0 +1,31 @@
+<div class="comments" *ngIf="postComment!==undefined">
+    <h6 *ngIf="postComment?.length<1">No Comments found</h6>
+    <ul *ngIf="postComment?.length>0">
+        <li *ngFor="let post of postComment; let i = index;">
+            <div class="col-12 col-sm-12 comment-container">
+                    <p>{{post.commentTxt}}</p>
+                    <div class="actions">
+                        <span>{{post.currentDate | date: 'dd/MM/yyyy'}}</span>
+                        <span class="divider"></span>
+                        <button class="btn btn-sm btn-info" (click)="replyComment(i)">
+                            Reply
+                        </button>
+                        <span class="divider"></span>
+                        <button class="btn btn-sm btn-danger" (click)="removeComment(i)">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                </div>
+                <div class="childCommentBox">
+                    <div datacontainer></div>
+                    <ul *ngIf="post?.replyComment?.length>0">
+                        <li *ngFor="let rl of post.replyComment">
+                            <div class="col-12 col-sm-12 comment-container">
+                                    <p>{{rl.commentTxt}}</p>
+                            </div>
+                        </li>
+                    </ul>            
+                </div>                
+            </div>
+        </li>
+    </ul>
+</div>
